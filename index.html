@@ -8,11 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/sass/styles.sass" />
   </head>
-  <body>
-    <header class="bg-blue-800 fixed top-0 right-0 left-0">
+  <body class="bg-neutral-700">
+    <header class="bg-blue-800 fixed top-0 right-0 left-0 z-50">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
-          <div class="flex-1 md:flex md:items-center md:gap-12">
+          <div>
             <h1>
               <a href="index.html"
                 ><img
@@ -22,31 +22,36 @@
               /></a>
             </h1>
           </div>
-
+          <div class="flex justify-center">
+            <input
+              class="bg-neutral-200 p-2 rounded"
+              type="search"
+              id="search"
+              placeholder="Search"
+              value="" />
+          </div>
           <div class="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" class="hidden md:block">
               <ul class="flex items-center gap-6 text-sm">
                 <li>
                   <a
-                    class="text-neutral-100 transition hover:text-gray-300"
+                    class="text-neutral-100 transition hover:text-gray-400"
                     href="pokemon.html">
                     Pokemon
                   </a>
                 </li>
-
                 <li>
                   <a
-                    class="text-neutral-100 transition hover:text-gray-300"
-                    href="onepiece.html">
-                    One Piece
+                    class="text-neutral-100 transition hover:text-gray-400"
+                    href="sealed.html">
+                    Scellé
                   </a>
                 </li>
-
                 <li>
                   <a
-                    class="text-neutral-100 transition hover:text-gray-300"
-                    href="ripandship.html">
-                    Rip and Ship
+                    class="text-neutral-100 transition hover:text-gray-400"
+                    href="single.html">
+                    Single
                   </a>
                 </li>
               </ul>
@@ -58,8 +63,201 @@
         </div>
       </div>
     </header>
-    <main class="h-screen">
-      <h1>Accueil</h1>
+    <main class="mt-15">
+      <section id="Banner">
+        <img class="w-full" src="images/mainbanner.png" alt="Banner" />
+        <div class="my-15 flex justify-center">
+          <a
+            class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500"
+            href="sealed.html"
+            >Magasiner produit scellé</a
+          >
+          <a
+            class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500"
+            href="single.html"
+            >Magasiner des singles</a
+          >
+        </div>
+      </section>
+      <hr class="my-15" />
+      <section id="carrousel">
+        <h2 class="flex justify-center">Nouveautés</h2>
+        <div class="flex justify-center">
+          <div
+            id="default-carousel"
+            class="relative w-2/3"
+            data-carousel="slide">
+            <div
+              class="h-full relative overflow-hidden bg-neutral-700 rounded-lg md:h-200">
+              <div
+                class="hidden duration-700 ease-in-out bg-neutral-700"
+                data-carousel-item>
+                <img
+                  src="images/etb1.jpg"
+                  class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..." />
+              </div>
+              <div
+                class="hidden duration-700 ease-in-out bg-neutral-700"
+                data-carousel-item>
+                <img
+                  src="images/bb1.jpg"
+                  class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..." />
+              </div>
+              <div
+                class="hidden duration-700 ease-in-out bg-neutral-700"
+                data-carousel-item>
+                <img
+                  src="images/tin1.jpg"
+                  class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..." />
+              </div>
+            </div>
+            <div
+              class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="true"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            </div>
+            <button
+              type="button"
+              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next>
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg
+                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr class="my-15" />
+      <section id="promo">
+        <h2 class="flex justify-center mb-15">Produits en vedette</h2>
+        <div class="flex justify-evenly mb-15">
+          <div
+            class="max-w-sm border rounded overflow-hidden shadow-lg p-5 bg-gray-400">
+            <img class="w-full" src="images/zekrom.webp" alt="Zekrom PSA 10" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 flex justify-center">
+                Zekrom PSA 10 JP
+              </div>
+              <div class="flex justify-between items-center">
+                <p>Prix: $1,106.97</p>
+                <button
+                  class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                  Acheter
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-sm border rounded overflow-hidden shadow-lg p-5 bg-gray-400">
+            <img
+              class="w-full"
+              src="images/reshirampsa10.jpg"
+              alt="Reshiram PSA 10" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 flex justify-center">
+                Reshiram PSA 10 EN
+              </div>
+              <div class="flex justify-between items-center">
+                <p>Prix: $1,516.35</p>
+                <button
+                  class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                  Acheter
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-sm border rounded overflow-hidden shadow-lg p-5 bg-gray-400">
+            <img
+              class="w-full"
+              src="images/victini.webp"
+              alt="Victini PSA 10" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 flex justify-center">
+                Victini PSA 10 EN
+              </div>
+              <div class="flex justify-between items-center">
+                <p>Prix: $2,136.68</p>
+                <button
+                  class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                  Acheter
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-sm border rounded overflow-hidden hover shadow-lg p-5 bg-gray-400">
+            <img class="w-full" src="images/zekromEN.jpg" alt="Zekrom PSA 10" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2 flex justify-center">
+                Zekrom PSA 10 EN
+              </div>
+              <div class="flex justify-between items-center">
+                <p>Prix: $1,928.52</p>
+                <button
+                  class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                  Acheter
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-blue-800 mx-auto">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,5 +289,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   </body>
 </html>

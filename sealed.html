@@ -8,11 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/sass/styles.sass" />
   </head>
-  <body>
+  <body class="bg-neutral-700">
     <header class="bg-blue-800 fixed top-0 right-0 left-0">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
-          <div class="flex-1 md:flex md:items-center md:gap-12">
+          <div>
             <h1>
               <a href="index.html"
                 ><img
@@ -22,31 +22,29 @@
               /></a>
             </h1>
           </div>
-
+          <div class="flex justify-center">
+            <input
+              class="bg-neutral-200 p-2 rounded"
+              type="search"
+              id="search"
+              placeholder="Search"
+              value="" />
+          </div>
           <div class="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" class="hidden md:block">
               <ul class="flex items-center gap-6 text-sm">
                 <li>
                   <a
                     class="text-neutral-100 transition hover:text-gray-300"
-                    href="pokemon.html">
-                    Pokemon
+                    href="sealed.html">
+                    Scellé
                   </a>
                 </li>
-
                 <li>
                   <a
                     class="text-neutral-100 transition hover:text-gray-300"
-                    href="onepiece.html">
-                    One Piece
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-gray-300"
-                    href="ripandship.html">
-                    Rip and Ship
+                    href="single.html">
+                    Single
                   </a>
                 </li>
               </ul>
@@ -58,7 +56,7 @@
         </div>
       </div>
     </header>
-    <main class="h-screen"><h1>One Piece</h1></main>
+    <main></main>
     <footer class="bg-blue-800 mx-auto">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col justify-between items-center lg:flex-row">
