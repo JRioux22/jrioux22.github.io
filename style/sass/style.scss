@@ -1,0 +1,44 @@
+#panier tr {
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+
+  td {
+    padding: 5px 0px;
+  }
+  img {
+    width: 500px;
+    height: auto;
+  }
+  div {
+    margin-bottom: 50px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+
+#commande tr {
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th {
+    text-align: start;
+    padding: 10px 2px;
+    font-size: 1.5rem;
+  }
+
+  td {
+    padding: 5px 0px;
+  }
+  div {
+    margin-bottom: 50px;
+  }
+}

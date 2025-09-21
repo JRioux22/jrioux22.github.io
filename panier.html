@@ -6,10 +6,10 @@
     <title>Cards in Motions</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/sass/styles.sass" />
+    <link rel="stylesheet" href="style/css/style.css" />
   </head>
   <body class="bg-neutral-700">
-    <header class="bg-blue-800 fixed top-0 right-0 left-0">
+    <header class="bg-blue-800 fixed top-0 right-0 left-0 z-50">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div>
@@ -56,7 +56,124 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="mx-auto max-w-9/12 mt-30">
+      <section>
+        <h2 class="mb-15">Votre panier</h2>
+        <div class="grid grid-cols-12 row-span-2 justify-center">
+          <div
+            class="flex justify-between item-start w-full 2xl:col-span-8 mb-30">
+            <table id="panier">
+              <tbody>
+                <tr>
+                  <th class="text-left w-1/4">Produit</th>
+                  <th class="px-20 py-5"></th>
+                  <th>Quantité</th>
+                  <th>Prix</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/bbox1.jpg" alt="Booster box" />
+                  </td>
+                  <td class="text-center px-20 py-5">Ramen</td>
+                  <td>12.99$</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>
+                    <a
+                      class="border-2 rounded p-2 hover:bg-neutral-600"
+                      href="#"
+                      >X</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="images/tin1.jpg" alt="" /></td>
+                  <td class="text-center px-20 py-5">Curry</td>
+                  <td>14.99$</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>
+                    <a
+                      class="border-2 rounded p-2 hover:bg-neutral-600"
+                      href="#"
+                      >X</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="images/etb1.jpg" alt="" /></td>
+                  <td class="text-center px-20 py-5">Sushi</td>
+                  <td>19.99$</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>
+                    <a
+                      class="border-2 rounded p-2 hover:bg-neutral-600"
+                      href="#"
+                      >X</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="2xl:col-span-3 2xl:col-start-9 w-full p-5">
+            <div class="border p-5">
+              <h3>Détails de la commande</h3>
+              <table id="commande">
+                <tbody>
+                  <tr>
+                    <th>Sous-total:</th>
+                    <td>256.89$</td>
+                  </tr>
+                  <tr>
+                    <th>Taxes:</th>
+                    <td>38.53$</td>
+                  </tr>
+                  <tr class="border-t">
+                    <th>Total:</th>
+                    <td>295.42$</td>
+                  </tr>
+                </tbody>
+              </table>
+              <form action="POST">
+                <div class="mt-5">
+                  <input
+                    type="radio"
+                    id="fast"
+                    name="livraison"
+                    value="fast"
+                    required />
+                  <label for="fast"
+                    >Livraison accelerer (3 à 5 jours ouvrables)</label
+                  ><br />
+                  <input
+                    type="radio"
+                    id="normale"
+                    name="livraison"
+                    value="normale"
+                    required />
+                  <label for="normale"
+                    >Livraison accelerer (12 à 15 jours ouvrables)</label
+                  ><br />
+                </div>
+                <div class="flex justify-end">
+                  <button type="submit">
+                    <a
+                      class="flex mt-10 border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500"
+                      href="#"
+                      >Commander</a
+                    >
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-blue-800 mx-auto">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col justify-between items-center lg:flex-row">
