@@ -38,3 +38,7 @@
 #commande tr div {
   margin-bottom: 50px;
 }
+
+#cards {
+  height: 500px;
+}
