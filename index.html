@@ -64,110 +64,116 @@
           <button><a href="single.html">Magasiner des singles</a></button>
         </div>
       </section>
-      <hr class="my-15" />
+      <div class="mx-auto px-4 sm:px-6 lg:px-12">
+        <hr />
+      </div>
       <section id="carrousel">
-        <h2 class="flex justify-center">Nouveautés</h2>
-        <div class="flex justify-center">
-          <div
-            id="default-carousel"
-            class="relative w-3/4"
-            data-carousel="slide">
+        <div class="mx-auto max-w-9/12 mt-30 mb-15">
+          <h2 class="flex justify-center">Nouveautés</h2>
+          <div class="flex justify-center">
             <div
-              class="h-full relative overflow-hidden bg-zinc-50 rounded-lg md:h-200">
+              id="default-carousel"
+              class="relative w-3/4"
+              data-carousel="slide">
               <div
-                class="hidden duration-900 ease-in-out bg-zinc-50"
-                data-carousel-item>
-                <img
-                  src="images/etb1.jpg"
-                  class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..." />
+                class="h-full relative overflow-hidden bg-zinc-50 rounded-lg md:h-200">
+                <div
+                  class="hidden duration-900 ease-in-out bg-zinc-50"
+                  data-carousel-item>
+                  <img
+                    src="images/etb1.jpg"
+                    class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..." />
+                </div>
+                <div
+                  class="hidden duration-700 ease-in-out bg-zinc-50"
+                  data-carousel-item>
+                  <img
+                    src="images/bb1.jpg"
+                    class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..." />
+                </div>
+                <div
+                  class="hidden duration-700 ease-in-out bg-zinc-50"
+                  data-carousel-item>
+                  <img
+                    src="images/tin1.jpg"
+                    class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..." />
+                </div>
               </div>
               <div
-                class="hidden duration-700 ease-in-out bg-zinc-50"
-                data-carousel-item>
-                <img
-                  src="images/bb1.jpg"
-                  class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..." />
+                class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  data-carousel-slide-to="0"></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 2"
+                  data-carousel-slide-to="1"></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 3"
+                  data-carousel-slide-to="2"></button>
               </div>
-              <div
-                class="hidden duration-700 ease-in-out bg-zinc-50"
-                data-carousel-item>
-                <img
-                  src="images/tin1.jpg"
-                  class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt="..." />
-              </div>
+              <button
+                type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 1 1 5l4 4" />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4" />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
             </div>
-            <div
-              class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-              <button
-                type="button"
-                class="w-3 h-3 rounded-full"
-                aria-current="true"
-                aria-label="Slide 1"
-                data-carousel-slide-to="0"></button>
-              <button
-                type="button"
-                class="w-3 h-3 rounded-full"
-                aria-current="false"
-                aria-label="Slide 2"
-                data-carousel-slide-to="1"></button>
-              <button
-                type="button"
-                class="w-3 h-3 rounded-full"
-                aria-current="false"
-                aria-label="Slide 3"
-                data-carousel-slide-to="2"></button>
-            </div>
-            <button
-              type="button"
-              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-prev>
-              <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg
-                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 1 1 5l4 4" />
-                </svg>
-                <span class="sr-only">Previous</span>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next>
-              <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg
-                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 9 4-4-4-4" />
-                </svg>
-                <span class="sr-only">Next</span>
-              </span>
-            </button>
           </div>
         </div>
       </section>
-      <hr class="my-15" />
+      <div class="mx-auto px-4 sm:px-6 lg:px-12">
+        <hr />
+      </div>
       <section id="promo" class="mx-auto max-w-9/12 mt-30">
         <h2 class="text-center mb-15">Produits en vedette</h2>
         <div class="mb-20 grid grid-cols-12 justify-between gap-4">
@@ -240,7 +246,140 @@
           </div>
         </div>
       </section>
-      <section id="FAQ"></section>
+      <div class="mx-auto px-4 sm:px-6 lg:px-12">
+        <hr />
+      </div>
+      <section id="FAQ">
+        <div class="mx-auto max-w-9/12 mt-30">
+          <h2 class="mb-15 text-center">FAQ</h2>
+          <div class="flex flex-col xl:flex-row justify-between mb-20 gap-5">
+            <div class="flex flex-col w-full gap-5">
+              <div class="py-5 border rounded-md">
+                <details class="group mx-5">
+                  <summary
+                    class="flex justify-between items-center font-medium cursor-pointer list-none">
+                    <span class="text-xl">
+                      Comment garantissez-vous l’authenticité des cartes ?</span
+                    >
+                    <span class="transition group-open:rotate-180">
+                      <svg
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        width="24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <hr class="mt-2" />
+                  <p class="mt-3 text-l group-open:animate-fadeIn">
+                    Toutes les cartes vendues sur notre plateforme sont
+                    vérifiées avant mise en vente. Nous demandons aux vendeurs
+                    des photos HD recto/verso et contrôlons les signes
+                    d’authenticité. Les cartes gradées PSA, CGC, Beckett ou PCA
+                    sont acceptées avec leur certificat officiel.
+                  </p>
+                </details>
+              </div>
+              <div class="py-5 border rounded-md">
+                <details class="group mx-5">
+                  <summary
+                    class="flex justify-between items-center font-medium cursor-pointer list-none">
+                    <span class="text-xl">
+                      Comment évaluez-vous l’état d’une carte ?</span
+                    >
+                    <span class="transition group-open:rotate-180">
+                      <svg
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        width="24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <hr class="mt-2" />
+                  <p class="mt-3 text-l group-open:animate-fadeIn">
+                    Nous suivons les critères standard (Neuf, Proche du Neuf,
+                    Excellent, Bon, etc.). Lorsqu’une carte est gradée par un
+                    organisme reconnu, la note est mentionnée dans l’annonce et
+                    fait foi pour l’état.
+                  </p>
+                </details>
+              </div>
+            </div>
+            <div class="flex flex-col w-full gap-5">
+              <div class="py-5 border rounded-md">
+                <details class="group mx-5">
+                  <summary
+                    class="flex justify-between items-center font-medium cursor-pointer list-none">
+                    <span class="text-xl">
+                      Quels sont les délais et frais de livraison ?</span
+                    >
+                    <span class="transition group-open:rotate-180">
+                      <svg
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        width="24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <hr class="mt-2" />
+                  <p class="mt-3 text-l group-open:animate-fadeIn">
+                    Les délais de la livraison rapide sont de 3 à 5 jours
+                    ouvrables pour les envois express au Canada et 10 à 12 jours
+                    pour les livraisons normales. Les frais pour la livraison
+                    rapide sont de 15$ et pour la livraison normale ils sont de
+                    5$.
+                  </p>
+                </details>
+              </div>
+              <div class="py-5 border rounded-md">
+                <details class="group mx-5">
+                  <summary
+                    class="flex justify-between items-center font-medium cursor-pointer list-none">
+                    <span class="text-xl">
+                      Quelle est votre politique de retour/remboursement ?</span
+                    >
+                    <span class="transition group-open:rotate-180">
+                      <svg
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        width="24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <hr class="mt-2" />
+                  <p class="mt-3 text-l group-open:animate-fadeIn">
+                    En cas de problème, vous pouvez demander un retour sous 14
+                    jours (si la carte est dans le même état).
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-blue-800 mx-auto">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
