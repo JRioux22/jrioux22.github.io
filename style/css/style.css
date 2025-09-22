@@ -9,6 +9,28 @@ h3 {
   font-size: 3rem;
 }
 
+h4,
+h5 {
+  font-size: 2.2rem;
+}
+
+main {
+  padding-top: 64px;
+}
+
+#formulaire button {
+  background-color: oklch(42.4% 0.199 265.638deg);
+  width: 100%;
+  padding: 10px;
+  border-radius: 5%;
+  color: oklch(98.5% 0 0deg);
+  cursor: pointer;
+  margin-top: 10px;
+}
+#formulaire button:hover {
+  background-color: oklch(54.6% 0.245 262.881deg);
+}
+
 #banner button {
   background-color: oklch(42.4% 0.199 265.638deg);
   padding: 10px;

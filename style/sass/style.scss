@@ -14,6 +14,28 @@ h3 {
   font-size: 3rem;
 }
 
+h4,
+h5 {
+  font-size: 2.2rem;
+}
+
+main {
+  padding-top: 64px;
+}
+
+#formulaire button {
+  background-color: $couleur1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5%;
+  color: $couleur3;
+  cursor: pointer;
+  margin-top: 10px;
+  &:hover {
+    background-color: $couleur2;
+  }
+}
+
 #banner button {
   background-color: $couleur1;
   padding: 10px;
