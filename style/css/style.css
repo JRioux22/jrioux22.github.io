@@ -42,3 +42,11 @@
 #cards {
   height: 500px;
 }
+
+#cards-sealed {
+  height: 400px;
+}
+
+#filtrage input {
+  margin-right: 10px;
+}

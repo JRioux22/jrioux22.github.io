@@ -59,9 +59,9 @@
     <main class="mx-auto max-w-9/12 mt-30">
       <div class="grid grid-cols-12 gap-4">
         <section class="2xl:col-span-3" id="filtrage">
-          <div class="border p-5">
+          <div class="border rounded p-5">
             <h2 class="mb-5">FILTRAGE</h2>
-            <h3 class="mb-5">Catégories</h3>
+            <h3 class="mb-5">Produit scellé</h3>
             <ul>
               <li>
                 <input type="checkbox" />
@@ -82,7 +82,7 @@
             </ul>
             <hr class="my-5" />
             <h3 class="mb-5">Expansion</h3>
-            <ul class="mb-5">
+            <ul>
               <li>
                 <input type="checkbox" /><label for="expension"
                   >Flamme blanche</label
@@ -98,91 +98,105 @@
                   >Évolutions prismatiques</label
                 >
               </li>
+              <li>
+                <input type="checkbox" /><label for="expension"
+                  >Rivalités Destinées</label
+                >
+              </li>
             </ul>
+            <div class="flex justify-end mt-5">
+              <button type="submit">
+                <a
+                  class="flex border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500"
+                  href="#"
+                  >Filtrer</a
+                >
+              </button>
+            </div>
           </div>
         </section>
         <section class="2xl:col-span-9" id="produitsealed">
           <div class="flex justify-evenly">
             <div class="flex justify-evenly items-start mb-15 gap-4">
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/zekrom.webp"
-                  alt="Zekrom PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/etb2.jpg"
+                  alt="Mega Evolution Pokémon Center Coffret Dresseur d'Élite" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Zekrom PSA 10 JP
+                    Pokémon Center Coffret Dresseur d'Élite
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,106.97</p>
+                    <p>Prix: $77.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex justify-between items-center flex-col">
                 <img
                   class="w-3/4"
-                  src="images/reshirampsa10.jpg"
-                  alt="Reshiram PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/bb2.jpg"
+                  alt="Rivalités Destinées Booster Bundle" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Reshiram PSA 10 EN
+                    Rivalités Destinées Booster Bundle
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,516.35</p>
+                    <p>Prix: $28.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/victini.png"
-                  alt="Victini PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/tin3.jpg"
+                  alt="Pokémon GO Mini Tin" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Victini PSA 10 EN
+                    Pokémon GO Mini Tin
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $2,136.68</p>
+                    <p>Prix: $11.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/reshirampsa10.jpg"
-                  alt="Reshiram PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/tin1.jpg"
+                  alt="Pokémon GO Mini Tin" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Reshiram PSA 10 EN
+                    Pokémon GO Mini Tin
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,516.35</p>
+                    <p>Prix: $11.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
@@ -193,84 +207,84 @@
           <div class="flex justify-evenly">
             <div class="flex justify-evenly items-start mb-15 gap-4">
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/zekrom.webp"
-                  alt="Zekrom PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/bb1.jpg"
+                  alt="Mega Evolution Flammes Fantasmagoriques" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Zekrom PSA 10 JP
+                    Flammes Fantasmagoriques Booster Bundle
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,106.97</p>
+                    <p>Prix: $35.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex justify-between items-center flex-col">
                 <img
                   class="w-3/4"
-                  src="images/reshirampsa10.jpg"
-                  alt="Reshiram PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/bbox2.jpg"
+                  alt="Flammes Fantasmagoriques Booster Box" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Reshiram PSA 10 EN
+                    Mega Evolution Booster Box
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,516.35</p>
+                    <p>Prix: $210.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/victini.png"
-                  alt="Victini PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/etb1.jpg"
+                  alt="Pokémon Center Coffret Dresseur d'Élite" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Victini PSA 10 EN
+                    Pokémon Center Coffret Dresseur d'Élite
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $2,136.68</p>
+                    <p>Prix: $77.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/reshirampsa10.jpg"
-                  alt="Reshiram PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/bbox1.jpg"
+                  alt="Flammes Fantasmagoriques Booster Box" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Reshiram PSA 10 EN
+                    Flammes Fantasmagoriques Booster Box
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,516.35</p>
+                    <p>Prix: $210.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
@@ -281,84 +295,84 @@
           <div class="flex justify-evenly">
             <div class="flex justify-evenly items-start mb-15 gap-4">
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/zekrom.webp"
-                  alt="Zekrom PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/tin2.jpg"
+                  alt="Pokémon GO Mini Tin" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Zekrom PSA 10 JP
+                    Pokémon GO Mini Tin
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,106.97</p>
+                    <p>Prix: $11.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
-                class="shadow-lg p-5 flex justify-between items-center flex-col">
+                id="cards-sealed"
+                class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/reshirampsa10.jpg"
-                  alt="Reshiram PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/etb3.jpg"
+                  alt="Pokémon Center Coffret Dresseur d'Élite" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Reshiram PSA 10 EN
+                    Pokémon Center Coffret Dresseur d'Élite
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,516.35</p>
+                    <p>Prix: $77.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/victini.png"
-                  alt="Victini PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/etb4.jpg"
+                  alt="Pokémon Center Coffret Dresseur d'Élite" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Victini PSA 10 EN
+                    Pokémon Center Coffret Dresseur d'Élite
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $2,136.68</p>
+                    <p>Prix: $77.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                id="cards"
+                id="cards-sealed"
                 class="shadow-lg p-5 flex items-center justify-between flex-col">
                 <img
                   class="w-3/4"
-                  src="images/reshirampsa10.jpg"
-                  alt="Reshiram PSA 10" />
-                <div class="px-6 py-4">
+                  src="images/etb5.jpg"
+                  alt="Pokémon Center Coffret Dresseur d'Élite" />
+                <div class="py-4">
                   <div class="font-bold text-xl mb-2 flex justify-center">
-                    Reshiram PSA 10 EN
+                    Pokémon Center Coffret Dresseur d'Élite
                   </div>
                   <hr class="mb-5" />
                   <div class="flex justify-between items-center">
-                    <p>Prix: $1,516.35</p>
+                    <p>Prix: $77.99</p>
                     <button
-                      class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500">
+                      class="border rounded p-2 bg-gray-400 hover:bg-gray-500">
                       Acheter
                     </button>
                   </div>
