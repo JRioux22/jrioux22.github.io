@@ -1,3 +1,27 @@
+body {
+  color: black;
+  background-color: oklch(98.5% 0 0deg);
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3rem;
+}
+
+#banner button {
+  background-color: oklch(42.4% 0.199 265.638deg);
+  padding: 10px;
+  border-radius: 5%;
+  color: oklch(98.5% 0 0deg);
+  cursor: pointer;
+  margin: 0px 10px;
+  margin-top: 10px;
+}
+#banner button:hover {
+  background-color: oklch(54.6% 0.245 262.881deg);
+}
+
 #panier tr {
   text-align: center;
   font-size: 1.5rem;
@@ -16,6 +40,18 @@
 #panier tr table {
   border-collapse: collapse;
   width: 100%;
+}
+
+#commander button {
+  background-color: oklch(42.4% 0.199 265.638deg);
+  padding: 10px;
+  border-radius: 5%;
+  color: oklch(98.5% 0 0deg);
+  cursor: pointer;
+  margin-top: 10px;
+}
+#commander button:hover {
+  background-color: oklch(54.6% 0.245 262.881deg);
 }
 
 #commande tr {
@@ -39,14 +75,70 @@
   margin-bottom: 50px;
 }
 
+#promo button {
+  background-color: oklch(42.4% 0.199 265.638deg);
+  padding: 10px;
+  border-radius: 5%;
+  color: oklch(98.5% 0 0deg);
+  cursor: pointer;
+  margin-top: 10px;
+}
+#promo button:hover {
+  background-color: oklch(54.6% 0.245 262.881deg);
+}
+
 #cards {
-  height: 500px;
+  height: 450px;
+}
+#cards button {
+  background-color: oklch(42.4% 0.199 265.638deg);
+  padding: 10px;
+  border-radius: 5%;
+  color: oklch(98.5% 0 0deg);
+  cursor: pointer;
+}
+#cards button:hover {
+  background-color: oklch(54.6% 0.245 262.881deg);
 }
 
 #cards-sealed {
   height: 400px;
 }
+#cards-sealed button {
+  background-color: oklch(42.4% 0.199 265.638deg);
+  padding: 10px;
+  border-radius: 5%;
+  color: oklch(98.5% 0 0deg);
+  cursor: pointer;
+}
+#cards-sealed button:hover {
+  background-color: oklch(54.6% 0.245 262.881deg);
+}
 
+#filtrage {
+  grid-column: 1/4;
+}
 #filtrage input {
   margin-right: 10px;
+}
+#filtrage button {
+  background-color: oklch(42.4% 0.199 265.638deg);
+  border-radius: 5%;
+  padding: 10px 0px;
+  color: oklch(98.5% 0 0deg);
+}
+#filtrage button:hover {
+  background-color: oklch(54.6% 0.245 262.881deg);
+}
+#filtrage button a {
+  padding: 10px 15px;
+}
+
+#produitsealed hr {
+  width: 225px;
+  margin-bottom: 15px;
+}
+
+.active {
+  text-decoration: underline;
 }

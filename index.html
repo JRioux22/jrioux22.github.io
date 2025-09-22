@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/css/style.css" />
   </head>
   <body class="bg-neutral-700">
-    <header class="bg-blue-800 fixed top-0 right-0 left-0 z-50">
+    <header class="fixed top-0 right-0 left-0 z-50 bg-blue-800">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div>
@@ -57,19 +57,11 @@
       </div>
     </header>
     <main class="pt-15">
-      <section id="Banner">
+      <section id="banner">
         <img class="w-full" src="images/mainbanner.png" alt="Banner" />
         <div class="my-15 flex justify-center">
-          <a
-            class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500"
-            href="sealed.html"
-            >Magasiner produit scellé</a
-          >
-          <a
-            class="border rounded p-2 mx-5 bg-gray-400 hover:bg-gray-500"
-            href="single.html"
-            >Magasiner des singles</a
-          >
+          <button><a href="sealed.html">Magasiner produit scellé</a></button>
+          <button><a href="single.html">Magasiner des singles</a></button>
         </div>
       </section>
       <hr class="my-15" />
@@ -81,9 +73,9 @@
             class="relative w-3/4"
             data-carousel="slide">
             <div
-              class="h-full relative overflow-hidden bg-neutral-700 rounded-lg md:h-200">
+              class="h-full relative overflow-hidden bg-zinc-50 rounded-lg md:h-200">
               <div
-                class="hidden duration-900 ease-in-out bg-neutral-700"
+                class="hidden duration-900 ease-in-out bg-zinc-50"
                 data-carousel-item>
                 <img
                   src="images/etb1.jpg"
@@ -91,7 +83,7 @@
                   alt="..." />
               </div>
               <div
-                class="hidden duration-700 ease-in-out bg-neutral-700"
+                class="hidden duration-700 ease-in-out bg-zinc-50"
                 data-carousel-item>
                 <img
                   src="images/bb1.jpg"
@@ -99,7 +91,7 @@
                   alt="..." />
               </div>
               <div
-                class="hidden duration-700 ease-in-out bg-neutral-700"
+                class="hidden duration-700 ease-in-out bg-zinc-50"
                 data-carousel-item>
                 <img
                   src="images/tin1.jpg"
@@ -176,11 +168,10 @@
         </div>
       </section>
       <hr class="my-15" />
-      <section id="promo">
-        <h2 class="flex justify-center mb-15">Produits en vedette</h2>
-        <div class="flex justify-evenly mb-15">
-          <div
-            class="max-w-sm border rounded overflow-hidden shadow-lg p-5 bg-gray-400">
+      <section id="promo" class="mx-auto max-w-9/12 mt-30">
+        <h2 class="text-center mb-15">Produits en vedette</h2>
+        <div class="mb-20 grid grid-cols-12 justify-between gap-4">
+          <div class="col-span-3 rounded shadow-lg p-5">
             <img class="w-full" src="images/zekrom.webp" alt="Zekrom PSA 10" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 flex justify-center">
@@ -196,8 +187,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="max-w-sm border rounded overflow-hidden shadow-lg p-5 bg-gray-400">
+          <div class="col-span-3 rounded shadow-lg p-5">
             <img
               class="w-full"
               src="images/reshirampsa10.jpg"
@@ -216,8 +206,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="max-w-sm border rounded overflow-hidden shadow-lg p-5 bg-gray-400">
+          <div class="col-span-3 rounded shadow-lg p-5">
             <img class="w-full" src="images/victini.png" alt="Victini PSA 10" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 flex justify-center">
@@ -233,8 +222,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="max-w-sm border rounded overflow-hidden hover shadow-lg p-5 bg-gray-400">
+          <div class="col-span-3 rounded shadow-lg p-5">
             <img class="w-full" src="images/zekromEN.jpg" alt="Zekrom PSA 10" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 flex justify-center">
@@ -252,6 +240,7 @@
           </div>
         </div>
       </section>
+      <section id="FAQ"></section>
     </main>
     <footer class="bg-blue-800 mx-auto">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">

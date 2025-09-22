@@ -1,3 +1,32 @@
+$couleur1: oklch(42.4% 0.199 265.638);
+$couleur2: oklch(54.6% 0.245 262.881);
+$couleur3: oklch(98.5% 0 0);
+$couleur4: black;
+
+body {
+  color: $couleur4;
+  background-color: $couleur3;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3rem;
+}
+
+#banner button {
+  background-color: $couleur1;
+  padding: 10px;
+  border-radius: 5%;
+  color: $couleur3;
+  cursor: pointer;
+  margin: 0px 10px;
+  margin-top: 10px;
+  &:hover {
+    background-color: $couleur2;
+  }
+}
+
 #panier tr {
   text-align: center;
   font-size: 1.5rem;
@@ -16,6 +45,18 @@
   table {
     border-collapse: collapse;
     width: 100%;
+  }
+}
+
+#commander button {
+  background-color: $couleur1;
+  padding: 10px;
+  border-radius: 5%;
+  color: $couleur3;
+  cursor: pointer;
+  margin-top: 10px;
+  &:hover {
+    background-color: $couleur2;
   }
 }
 
@@ -43,14 +84,70 @@
   }
 }
 
+#promo button {
+  background-color: $couleur1;
+  padding: 10px;
+  border-radius: 5%;
+  color: $couleur3;
+  cursor: pointer;
+  margin-top: 10px;
+  &:hover {
+    background-color: $couleur2;
+  }
+}
+
 #cards {
-  height: 500px;
+  height: 450px;
+  button {
+    background-color: $couleur1;
+    padding: 10px;
+    border-radius: 5%;
+    color: $couleur3;
+    cursor: pointer;
+    &:hover {
+      background-color: $couleur2;
+    }
+  }
 }
 
 #cards-sealed {
   height: 400px;
+  button {
+    background-color: $couleur1;
+    padding: 10px;
+    border-radius: 5%;
+    color: $couleur3;
+    cursor: pointer;
+    &:hover {
+      background-color: $couleur2;
+    }
+  }
 }
 
-#filtrage input {
-  margin-right: 10px;
+#filtrage {
+  grid-column: 1 / 4;
+  input {
+    margin-right: 10px;
+  }
+  button {
+    background-color: $couleur1;
+    border-radius: 5%;
+    padding: 10px 0px;
+    color: $couleur3;
+    &:hover {
+      background-color: $couleur2;
+    }
+    a {
+      padding: 10px 15px;
+    }
+  }
+}
+
+#produitsealed hr {
+  width: 225px;
+  margin-bottom: 15px;
+}
+
+.active {
+  text-decoration: underline;
 }
