@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards in Motions</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style/css/style.css" />
+  </head>
+  <body class="bg-neutral-700">
+    <header class="fixed top-0 right-0 left-0 z-50 bg-blue-800">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div>
+            <h1>
+              <a href="index.html"
+                ><img
+                  class="max-h-full"
+                  src="images/logo_cardsinmotions.png"
+                  alt="Logo Cards in motions"
+              /></a>
+            </h1>
+          </div>
+          <div class="flex justify-center">
+            <input
+              class="bg-neutral-200 p-2 rounded"
+              type="search"
+              id="search"
+              placeholder="Search"
+              value="" />
+          </div>
+          <div class="md:flex md:items-center md:gap-12">
+            <nav aria-label="Global" class="hidden md:block">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a
+                    class="text-neutral-100 transition hover:text-gray-300"
+                    href="sealed.html">
+                    Scellé
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-neutral-100 transition hover:text-gray-300"
+                    href="single.html">
+                    Single
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="panier.html"
+              ><img class="" src="images/cart.png" alt="Panier"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="confirmation">
+        <div
+          class="text-center mt-30 mx-auto max-w-9/12 flex items-center flex-col">
+          <h1 class="mb-15">Confirmation de votre commande</h1>
+          <h4>
+            Votre commande sera traitée et expédiée sous peu. Vous recevrez un
+            email de notification dès que votre colis sera en route.
+          </h4>
+          <img class="w-1/6 mt-10" src="images/pikachu1.png" alt="Pikachu" />
+        </div>
+      </section>
+    </main>
+    <footer class="bg-blue-800 mx-auto">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col justify-between items-center lg:flex-row">
+          <div class="flex flex-col lg:flex-row items-center lg:gap-1 py-5">
+            <div class="flex flex-row gap-2">
+              <img src="images/mail.png" alt="Image de lettre" />
+              <a class="text-neutral-100" href="mailto:info@cardsinmotions.com"
+                >info@cardsinmotions.com</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between gap-2">
+            <a href="#"
+              ><img src="images/facebook.png" alt="Lien Facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/instagram.png" alt="Lien Instagram"
+            /></a>
+            <a href="#"><img src="images/x.png" alt="Lien Twitter" /></a>
+          </div>
+        </div>
+        <hr class="border-neutral-100" />
+        <div
+          class="flex align-middle justify-between pt-5 text-neutral-100 pb-5">
+          <p>Cegep de Trois-Rivieres</p>
+          <p>Techniques d'intégration Web 2</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="validation.js"></script>
+  </body>
+</html>
