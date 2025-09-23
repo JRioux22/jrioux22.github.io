@@ -23,10 +23,6 @@ main {
   padding-top: 64px;
 }
 
-#confirmation {
-  height: 67vh;
-}
-
 #formulaire button {
   background-color: $couleur1;
   width: 100%;
@@ -158,20 +154,12 @@ main {
   button {
     background-color: $couleur1;
     border-radius: 5%;
-    padding: 10px 0px;
+    padding: 10px 15px;
     color: $couleur3;
     &:hover {
       background-color: $couleur2;
     }
-    a {
-      padding: 10px 15px;
-    }
   }
-}
-
-#produitsealed hr {
-  width: 225px;
-  margin-bottom: 15px;
 }
 
 .active {

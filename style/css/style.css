@@ -18,10 +18,6 @@ main {
   padding-top: 64px;
 }
 
-#confirmation {
-  height: 67vh;
-}
-
 #formulaire button {
   background-color: oklch(42.4% 0.199 265.638deg);
   width: 100%;
@@ -150,19 +146,11 @@ main {
 #filtrage button {
   background-color: oklch(42.4% 0.199 265.638deg);
   border-radius: 5%;
-  padding: 10px 0px;
+  padding: 10px 15px;
   color: oklch(98.5% 0 0deg);
 }
 #filtrage button:hover {
   background-color: oklch(54.6% 0.245 262.881deg);
-}
-#filtrage button a {
-  padding: 10px 15px;
-}
-
-#produitsealed hr {
-  width: 225px;
-  margin-bottom: 15px;
 }
 
 .active {

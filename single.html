@@ -9,354 +9,449 @@
     <link rel="stylesheet" href="style/css/style.css" />
   </head>
   <body class="bg-neutral-700">
-    <header class="bg-blue-800 fixed top-0 right-0 left-0 z-50">
+    <header class="fixed top-0 right-0 left-0 z-50 bg-blue-800">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div>
             <h1>
-              <a href="index.html"
-                ><img
+              <a href="index.html">
+                <img
                   class="max-h-full"
                   src="images/logo_cardsinmotions.png"
-                  alt="Logo Cards in motions"
-              /></a>
+                  alt="Logo Cards in motions" />
+              </a>
             </h1>
           </div>
+
           <div class="flex justify-center">
             <input
               class="bg-neutral-200 p-2 rounded"
               type="search"
               id="search"
-              placeholder="Search"
-              value="" />
+              placeholder="Search" />
           </div>
-          <div class="md:flex md:items-center md:gap-12">
-            <nav aria-label="Global" class="hidden md:block">
-              <ul class="flex items-center gap-6 text-sm">
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-gray-300"
-                    href="sealed.html">
-                    Scellé
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-gray-300 active"
-                    href="single.html">
-                    Single
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <a href="panier.html"
-              ><img class="" src="images/cart.png" alt="Panier"
-            /></a>
+
+          <div class="flex items-center gap-4">
+            <button
+              id="hamburger-btn"
+              class="md:hidden text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+
+            <div class="hidden md:flex md:items-center md:gap-12">
+              <nav aria-label="Global">
+                <ul class="flex items-center gap-6 text-sm">
+                  <li>
+                    <a
+                      class="text-neutral-100 transition hover:text-blue-300"
+                      href="sealed.html">
+                      Scellé
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-neutral-100 transition hover:text-blue-300 active"
+                      href="single.html">
+                      Single
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="panier.html">
+                <img src="images/cart.png" alt="Panier" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="mx-auto max-w-9/12 mt-20">
-      <h1 class="mb-20">Single</h1>
-      <div class="grid grid-cols-12 gap-4">
-        <section id="filtrage">
-          <div class="border rounded p-5">
+    <main class="w-full px-4 mt-20 xl:max-w-[1200px] mx-auto">
+      <h1 class="mb-10 text-2xl font-bold text-center lg:text-left">Single</h1>
+
+      <div
+        class="grid grid-cols-12 gap-4 w-full px-4 xl:max-w-[1200px] mx-auto">
+        <section class="col-span-12 lg:col-span-3 p-5 text-center lg:text-left">
+          <div class="border rounded p-5 bg-white shadow">
             <h2 class="mb-5">FILTRAGE</h2>
-            <h4 class="mb-5">Grade PSA</h4>
-            <ul>
+
+            <h4 class="mb-3 font-semibold">Grade PSA</h4>
+            <ul class="space-y-2">
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 10</label>
+                <input
+                  type="checkbox"
+                  id="psa10"
+                  class="accent-blue-500" /><label
+                  for="psa10"
+                  class="cursor-pointer"
+                  >PSA 10</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 9</label>
+                <input
+                  type="checkbox"
+                  id="psa9"
+                  class="accent-blue-500" /><label
+                  for="psa9"
+                  class="cursor-pointer"
+                  >PSA 9</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 8</label>
+                <input
+                  type="checkbox"
+                  id="psa8"
+                  class="accent-blue-500" /><label
+                  for="psa8"
+                  class="cursor-pointer"
+                  >PSA 8</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 7</label>
+                <input
+                  type="checkbox"
+                  id="psa7"
+                  class="accent-blue-500" /><label
+                  for="psa7"
+                  class="cursor-pointer"
+                  >PSA 7</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 6</label>
+                <input
+                  type="checkbox"
+                  id="psa6"
+                  class="accent-blue-500" /><label
+                  for="psa6"
+                  class="cursor-pointer"
+                  >PSA 6</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 5</label>
+                <input
+                  type="checkbox"
+                  id="psa5"
+                  class="accent-blue-500" /><label
+                  for="psa5"
+                  class="cursor-pointer"
+                  >PSA 5</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 4</label>
+                <input
+                  type="checkbox"
+                  id="psa4"
+                  class="accent-blue-500" /><label
+                  for="psa4"
+                  class="cursor-pointer"
+                  >PSA 4</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 3</label>
+                <input
+                  type="checkbox"
+                  id="psa3"
+                  class="accent-blue-500" /><label
+                  for="psa3"
+                  class="cursor-pointer"
+                  >PSA 3</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 2</label>
+                <input
+                  type="checkbox"
+                  id="psa2"
+                  class="accent-blue-500" /><label
+                  for="psa2"
+                  class="cursor-pointer"
+                  >PSA 2</label
+                >
               </li>
               <li>
-                <input type="checkbox" />
-                <label for="categorie">PSA 1</label>
+                <input
+                  type="checkbox"
+                  id="psa1"
+                  class="accent-blue-500" /><label
+                  for="psa1"
+                  class="cursor-pointer"
+                  >PSA 1</label
+                >
               </li>
             </ul>
+
             <hr class="my-5" />
-            <h4 class="mb-5">Langue</h4>
-            <ul>
+
+            <h4 class="mb-3 font-semibold">Langue</h4>
+            <ul class="space-y-2">
               <li>
-                <input type="checkbox" /><label for="langue">Anglais</label>
+                <input
+                  type="checkbox"
+                  id="anglais"
+                  class="accent-blue-500" /><label
+                  for="anglais"
+                  class="cursor-pointer"
+                  >Anglais</label
+                >
               </li>
               <li>
-                <input type="checkbox" /><label for="langue">Japonnais</label>
+                <input
+                  type="checkbox"
+                  id="japonais"
+                  class="accent-blue-500" /><label
+                  for="japonais"
+                  class="cursor-pointer"
+                  >Japonnais</label
+                >
               </li>
               <li>
-                <input type="checkbox" /><label for="langue">Français</label>
+                <input
+                  type="checkbox"
+                  id="francais"
+                  class="accent-blue-500" /><label
+                  for="francais"
+                  class="cursor-pointer"
+                  >Français</label
+                >
               </li>
             </ul>
+
             <div class="flex justify-end mt-5">
-              <button type="submit">
-                <a href="#">Filtrer</a>
+              <button
+                type="submit"
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+                Filtrer
               </button>
             </div>
           </div>
         </section>
-        <section class="2xl:col-span-9" id="produitsealed">
-          <div class="flex justify-evenly gap-4">
-            <div class="flex justify-evenly items-start mb-15">
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/zekrom.webp"
-                  alt="Zekrom PSA 10" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Zekrom PSA 10 JP</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $1106</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex justify-between items-center flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/reshirampsa10.jpg"
-                  alt="Reshiram PSA 10 JP" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Reshiram PSA 10 EN</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $1516</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/victini.png"
-                  alt="Victini PSA 10 EN" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Victini PSA 10 EN</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $2136</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/zekromEN.jpg"
-                  alt="Zekrom PSA 10 EN" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Zekrom PSA 10 EN</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $1627</p>
-                    <button>Acheter</button>
-                  </div>
+
+        <section
+          class="col-span-12 lg:col-span-8 xl:col-span-9"
+          id="produitsealed">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/zekrom.webp"
+                alt="Zekrom PSA 10 JP" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Zekrom PSA 10 JP</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $1106</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="flex justify-evenly">
-            <div class="flex justify-evenly items-start mb-15 gap-4">
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/skamory.webp"
-                  alt="Skamory PSA 10 EN" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Skamory PSA 10 EN</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $130</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex justify-between items-center flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/lisia.png"
-                  alt="Lisia's Appeal PSA 10 EN" />
-                <div class="py-4">
-                  <div class="font-bold text-xl mb-2 text-center">
-                    <p>Lisia PSA 10 EN</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $194</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/pikachu.webp"
-                  alt="Pikachu PSA 10 FR" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pikachu PSA 10 FR</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $632</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/vinusaur.png"
-                  alt="Florizarre PSA 8 FR" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Florizarre PSA 8 FR</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $1,516.35</p>
-                    <button>Acheter</button>
-                  </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/reshirampsa10.jpg"
+                alt="Reshiram PSA 10 JP" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Reshiram PSA 10 EN</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $1516</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="flex justify-evenly">
-            <div class="flex justify-evenly items-start mb-15 gap-4">
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/magikarp.webp"
-                  alt="Zekrom PSA 10" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Magikarp PSA 9 JP</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $144</p>
-                    <button>Acheter</button>
-                  </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/victini.png"
+                alt="Victini PSA 10 EN" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Victini PSA 10 EN</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $2136</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex justify-between items-center flex-col">
-                <img class="w-3/4" src="images/mew.webp" alt="Mew PSA 10 JP" />
-                <div class="py-4">
-                  <div class="font-bold text-xl mb-2 flex justify-center">
-                    <p>Mew PSA 10 JP</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $551</p>
-                    <button>Acheter</button>
-                  </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/zekromEN.jpg"
+                alt="Zekrom PSA 10 EN" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Zekrom PSA 10 EN</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $1627</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/entei.png"
-                  alt="Entei PSA 5 JP" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Entei PSA 5 JP</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $1033</p>
-                    <button>Acheter</button>
-                  </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/skamory.webp"
+                alt="Skamory PSA 10 EN" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Skamory PSA 10 EN</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $130</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
-              <div
-                id="cards"
-                class="shadow-lg p-2 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/greninja.webp"
-                  alt="Reshiram PSA 10" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Greninja PSA 10 EN</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $1240</p>
-                    <button>Acheter</button>
-                  </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img class="w-3/4" src="images/lisia.png" alt="Lisia PSA 10 EN" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Lisia PSA 10 EN</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $194</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/pikachu.webp"
+                alt="Pikachu PSA 10 FR" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Pikachu PSA 10 FR</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $632</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/vinusaur.png"
+                alt="Florizarre PSA 8 FR" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Florizarre PSA 8 FR</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $1,516.35</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/magikarp.webp"
+                alt="Magikarp PSA 9 JP" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Magikarp PSA 9 JP</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $144</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img class="w-3/4" src="images/mew.webp" alt="Mew PSA 10 JP" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Mew PSA 10 JP</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $551</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img class="w-3/4" src="images/entei.png" alt="Entei PSA 5 JP" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Entei PSA 5 JP</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $1033</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="shadow-lg p-2 flex flex-col items-center bg-white rounded">
+              <img
+                class="w-3/4"
+                src="images/greninja.webp"
+                alt="Greninja PSA 10 EN" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Greninja PSA 10 EN</div>
+                <hr class="mb-3" />
+                <div class="flex justify-between items-center px-2">
+                  <p>Prix: $1240</p>
+                  <button
+                    class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
             </div>
@@ -364,6 +459,7 @@
         </section>
       </div>
     </main>
+
     <footer class="bg-blue-800 mx-auto">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col justify-between items-center lg:flex-row">
@@ -375,8 +471,7 @@
               >
             </div>
           </div>
-          <div
-            class="flex flex-col lg:flex-row items-center justify-between gap-2">
+          <div class="flex flex-row items-center justify-between gap-2">
             <a href="#"
               ><img src="images/facebook.png" alt="Lien Facebook"
             /></a>
@@ -386,7 +481,7 @@
             <a href="#"><img src="images/x.png" alt="Lien Twitter" /></a>
           </div>
         </div>
-        <hr class="border-neutral-100" />
+        <hr class="border-neutral-100 lg:mt-0 mt-5" />
         <div
           class="flex align-middle justify-between pt-5 text-neutral-100 pb-5">
           <p>Cegep de Trois-Rivieres</p>

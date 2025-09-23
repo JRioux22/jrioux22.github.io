@@ -9,59 +9,77 @@
     <link rel="stylesheet" href="style/css/style.css" />
   </head>
   <body class="bg-neutral-700">
-    <header class="bg-blue-800 fixed top-0 right-0 left-0 z-50">
+    <header class="fixed top-0 right-0 left-0 z-50 bg-blue-800">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div>
             <h1>
-              <a href="index.html"
-                ><img
+              <a href="index.html">
+                <img
                   class="max-h-full"
                   src="images/logo_cardsinmotions.png"
-                  alt="Logo Cards in motions"
-              /></a>
+                  alt="Logo Cards in motions" />
+              </a>
             </h1>
           </div>
+
           <div class="flex justify-center">
             <input
               class="bg-neutral-200 p-2 rounded"
               type="search"
               id="search"
-              placeholder="Search"
-              value="" />
+              placeholder="Search" />
           </div>
-          <div class="md:flex md:items-center md:gap-12">
-            <nav aria-label="Global" class="hidden md:block">
-              <ul class="flex items-center gap-6 text-sm">
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-gray-300"
-                    href="sealed.html">
-                    Scellé
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-gray-300"
-                    href="single.html">
-                    Single
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <a href="panier.html"
-              ><img class="" src="images/cart.png" alt="Panier"
-            /></a>
+
+          <div class="flex items-center gap-4">
+            <button
+              id="hamburger-btn"
+              class="md:hidden text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+
+            <div class="hidden md:flex md:items-center md:gap-12">
+              <nav aria-label="Global">
+                <ul class="flex items-center gap-6 text-sm">
+                  <li>
+                    <a
+                      class="text-neutral-100 transition hover:text-blue-300"
+                      href="sealed.html">
+                      Scellé
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-neutral-100 transition hover:text-blue-300"
+                      href="single.html">
+                      Single
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="panier.html">
+                <img src="images/cart.png" alt="Panier" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <main class="mx-auto max-w-9/12 mt-20">
       <section>
-        <h2 class="mb-20">Votre panier</h2>
+        <h2 class="mb-20 2xl:text-left text-center">Votre panier</h2>
         <div class="grid grid-cols-12 justify-between">
           <div
-            class="flex justify-between item-start w-full 2xl:col-span-8 mb-30">
+            class="flex justify-between item-start w-full col-span-12 2xl:col-span-8 mb-30">
             <table id="panier">
               <tbody>
                 <tr>
@@ -107,9 +125,9 @@
               </tbody>
             </table>
           </div>
-          <div class="2xl:col-span-3 2xl:col-start-10 p-5">
+          <div class="col-span-12 mb-10 2xl:col-span-3 2xl:col-start-10 p-5">
             <div class="border rounded p-5">
-              <h3>Détails de la commande</h3>
+              <h3 class="text-center">Détails de la commande</h3>
               <table id="commande" class="w-full">
                 <tbody>
                   <tr>
@@ -147,8 +165,7 @@
               >
             </div>
           </div>
-          <div
-            class="flex flex-col lg:flex-row items-center justify-between gap-2">
+          <div class="flex flex-row items-center justify-between gap-2">
             <a href="#"
               ><img src="images/facebook.png" alt="Lien Facebook"
             /></a>
@@ -158,7 +175,7 @@
             <a href="#"><img src="images/x.png" alt="Lien Twitter" /></a>
           </div>
         </div>
-        <hr class="border-neutral-100" />
+        <hr class="border-neutral-100 lg:mt-0 mt-5" />
         <div
           class="flex align-middle justify-between pt-5 text-neutral-100 pb-5">
           <p>Cegep de Trois-Rivieres</p>

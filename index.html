@@ -14,44 +14,62 @@
         <div class="flex h-16 items-center justify-between">
           <div>
             <h1>
-              <a href="index.html"
-                ><img
+              <a href="index.html">
+                <img
                   class="max-h-full"
                   src="images/logo_cardsinmotions.png"
-                  alt="Logo Cards in motions"
-              /></a>
+                  alt="Logo Cards in motions" />
+              </a>
             </h1>
           </div>
+
           <div class="flex justify-center">
             <input
               class="bg-neutral-200 p-2 rounded"
               type="search"
               id="search"
-              placeholder="Search"
-              value="" />
+              placeholder="Search" />
           </div>
-          <div class="md:flex md:items-center md:gap-12">
-            <nav aria-label="Global" class="hidden md:block">
-              <ul class="flex items-center gap-6 text-sm">
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-gray-300"
-                    href="sealed.html">
-                    Scellé
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-gray-300"
-                    href="single.html">
-                    Single
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <a href="panier.html"
-              ><img class="" src="images/cart.png" alt="Panier"
-            /></a>
+
+          <div class="flex items-center gap-4">
+            <button
+              id="hamburger-btn"
+              class="md:hidden text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+
+            <div class="hidden md:flex md:items-center md:gap-12">
+              <nav aria-label="Global">
+                <ul class="flex items-center gap-6 text-sm">
+                  <li>
+                    <a
+                      class="text-neutral-100 transition hover:text-blue-300"
+                      href="sealed.html">
+                      Scellé
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-neutral-100 transition hover:text-blue-300"
+                      href="single.html">
+                      Single
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="panier.html">
+                <img src="images/cart.png" alt="Panier" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -59,9 +77,15 @@
     <main>
       <section id="banner">
         <img class="w-full" src="images/mainbanner.png" alt="Banner" />
-        <div class="my-15 flex justify-center">
-          <button><a href="sealed.html">Magasiner produit scellé</a></button>
-          <button><a href="single.html">Magasiner des singles</a></button>
+        <div
+          class="my-15 flex justify-center flex-col md:flex-row mx-auto max-w-9/12">
+          <button>
+            <a href="sealed.html">Magasiner produit scellé</a>
+          </button>
+
+          <button>
+            <a href="single.html">Magasiner des singles</a>
+          </button>
         </div>
       </section>
       <div class="mx-auto px-4 sm:px-6 lg:px-12">
@@ -70,36 +94,36 @@
       <section id="carrousel">
         <div class="mx-auto max-w-9/12 mt-30 mb-15">
           <h2 class="flex justify-center">Nouveautés</h2>
-          <div class="flex justify-center">
+          <div class="grid grid-cols-12">
             <div
               id="default-carousel"
-              class="relative w-3/4"
+              class="relative col-span-12 lg:col-span-8 lg:col-start-3"
               data-carousel="slide">
               <div
-                class="h-full relative overflow-hidden bg-zinc-50 rounded-lg md:h-200">
+                class="h-64 md:h-80 lg:h-96 relative overflow-hidden bg-zinc-50 rounded-lg">
                 <div
-                  class="hidden duration-900 ease-in-out bg-zinc-50"
+                  class="hidden duration-900 ease-in-out bg-zinc-50 flex justify-center items-center"
                   data-carousel-item>
                   <img
                     src="images/etb1.jpg"
-                    class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="..." />
+                    class="rounded-lg h-48 sm:h-64 md:h-80 lg:h-96"
+                    alt="Pokémon Center Coffret Dresseur d'Élite" />
                 </div>
                 <div
-                  class="hidden duration-700 ease-in-out bg-zinc-50"
+                  class="hidden duration-900 ease-in-out bg-zinc-50 flex justify-center items-center"
                   data-carousel-item>
                   <img
                     src="images/bb1.jpg"
-                    class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="..." />
+                    class="rounded-lg h-48 sm:h-64 md:h-80 lg:h-96"
+                    alt="Booster box" />
                 </div>
                 <div
-                  class="hidden duration-700 ease-in-out bg-zinc-50"
+                  class="hidden duration-900 ease-in-out bg-zinc-50 flex justify-center items-center"
                   data-carousel-item>
                   <img
                     src="images/tin1.jpg"
-                    class="absolute block h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="..." />
+                    class="rounded-lg h-48 sm:h-64 md:h-80 lg:h-96"
+                    alt="Tin" />
                 </div>
               </div>
               <div
@@ -177,7 +201,8 @@
       <section id="promo" class="mx-auto max-w-9/12 mt-30">
         <h2 class="text-center mb-15">Produits en vedette</h2>
         <div class="mb-20 grid grid-cols-12 justify-between gap-4">
-          <div class="col-span-3 rounded shadow-lg p-5">
+          <div
+            class="col-span-10 col-start-2 md:col-span-6 lg:col-span-3 rounded shadow-lg p-5">
             <img class="w-full" src="images/zekrom.webp" alt="Zekrom PSA 10" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 flex justify-center">
@@ -193,7 +218,8 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3 rounded shadow-lg p-5">
+          <div
+            class="col-span-10 col-start-2 md:col-span-6 lg:col-span-3 rounded shadow-lg p-5">
             <img
               class="w-full"
               src="images/reshirampsa10.jpg"
@@ -212,7 +238,8 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3 rounded shadow-lg p-5">
+          <div
+            class="col-span-10 col-start-2 md:col-span-6 lg:col-span-3 rounded shadow-lg p-5">
             <img class="w-full" src="images/victini.png" alt="Victini PSA 10" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 flex justify-center">
@@ -228,7 +255,8 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3 rounded shadow-lg p-5">
+          <div
+            class="col-span-10 col-start-2 md:col-span-6 lg:col-span-3 rounded shadow-lg p-5">
             <img class="w-full" src="images/zekromEN.jpg" alt="Zekrom PSA 10" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2 flex justify-center">
@@ -392,8 +420,7 @@
               >
             </div>
           </div>
-          <div
-            class="flex flex-col lg:flex-row items-center justify-between gap-2">
+          <div class="flex flex-row items-center justify-between gap-2">
             <a href="#"
               ><img src="images/facebook.png" alt="Lien Facebook"
             /></a>
@@ -403,7 +430,7 @@
             <a href="#"><img src="images/x.png" alt="Lien Twitter" /></a>
           </div>
         </div>
-        <hr class="border-neutral-100" />
+        <hr class="border-neutral-100 lg:mt-0 mt-5" />
         <div
           class="flex align-middle justify-between pt-5 text-neutral-100 pb-5">
           <p>Cegep de Trois-Rivieres</p>

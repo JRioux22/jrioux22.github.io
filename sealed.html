@@ -9,346 +9,359 @@
     <link rel="stylesheet" href="style/css/style.css" />
   </head>
   <body class="bg-neutral-700">
-    <header class="bg-blue-800 fixed top-0 right-0 left-0 z-50">
+    <header class="fixed top-0 right-0 left-0 z-50 bg-blue-800">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div>
             <h1>
-              <a href="index.html"
-                ><img
+              <a href="index.html">
+                <img
                   class="max-h-full"
                   src="images/logo_cardsinmotions.png"
-                  alt="Logo Cards in motions"
-              /></a>
+                  alt="Logo Cards in motions" />
+              </a>
             </h1>
           </div>
+
           <div class="flex justify-center">
             <input
               class="bg-neutral-200 p-2 rounded"
               type="search"
               id="search"
-              placeholder="Search"
-              value="" />
+              placeholder="Search" />
           </div>
-          <div class="md:flex md:items-center md:gap-12">
-            <nav aria-label="Global" class="hidden md:block">
-              <ul class="flex items-center gap-6 text-sm">
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-blue-300 active"
-                    href="sealed.html">
-                    Scellé
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="text-neutral-100 transition hover:text-blue-300"
-                    href="single.html">
-                    Single
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <a href="panier.html"
-              ><img class="" src="images/cart.png" alt="Panier"
-            /></a>
+
+          <div class="flex items-center gap-4">
+            <button
+              id="hamburger-btn"
+              class="md:hidden text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+
+            <div class="hidden md:flex md:items-center md:gap-12">
+              <nav aria-label="Global">
+                <ul class="flex items-center gap-6 text-sm">
+                  <li>
+                    <a
+                      class="text-neutral-100 transition hover:text-blue-300 active"
+                      href="sealed.html">
+                      Scellé
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-neutral-100 transition hover:text-blue-300"
+                      href="single.html">
+                      Single
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="panier.html">
+                <img src="images/cart.png" alt="Panier" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </header>
+
     <main class="mx-auto max-w-9/12 mt-20">
-      <h1 class="mb-20">Produit scellé</h1>
-      <div class="grid grid-cols-12 gap-4">
-        <section class="2xl:col-span-3" id="filtrage">
-          <div class="border rounded p-5">
-            <h2 class="mb-5">FILTRAGE</h2>
-            <h4 class="mb-5">Produit scellé</h4>
-            <ul>
-              <li>
-                <input type="checkbox" />
-                <label for="categorie">Paquet booster</label>
-              </li>
-              <li>
-                <input type="checkbox" />
-                <label for="categorie">Coffret Dresseur d'Élite</label>
-              </li>
-              <li>
-                <input type="checkbox" />
-                <label for="categorie">Booster Bundle</label>
-              </li>
-              <li>
-                <input type="checkbox" />
-                <label for="categorie">Mini tin</label>
-              </li>
-            </ul>
-            <hr class="my-5" />
-            <h4 class="mb-5">Expansion</h4>
-            <ul>
-              <li>
-                <input type="checkbox" /><label for="expension"
-                  >Flamme blanche</label
-                >
-              </li>
-              <li>
-                <input type="checkbox" /><label for="expension"
-                  >Foudre noire</label
-                >
-              </li>
-              <li>
-                <input type="checkbox" /><label for="expension"
-                  >Évolutions prismatiques</label
-                >
-              </li>
-              <li>
-                <input type="checkbox" /><label for="expension"
-                  >Rivalités Destinées</label
-                >
-              </li>
-            </ul>
-            <div class="flex justify-end mt-5">
-              <button type="submit">
-                <a href="#">Filtrer</a>
-              </button>
-            </div>
+      <h1 class="mb-20 text-center lg:text-left">Produit scellé</h1>
+      <div
+        class="grid grid-cols-12 gap-4 w-full px-4 xl:max-w-[1200px] mx-auto">
+        <section class="col-span-12 lg:col-span-3 p-5 text-center lg:text-left">
+          <h2 class="mb-5 text-lg font-bold">FILTRAGE</h2>
+
+          <h4 class="mb-3 font-semibold">Produit scellé</h4>
+          <ul class="space-y-2">
+            <li>
+              <input type="checkbox" id="booster" class="accent-blue-500" />
+              <label for="booster" class="cursor-pointer">Paquet booster</label>
+            </li>
+            <li>
+              <input type="checkbox" id="coffret" class="accent-blue-500" />
+              <label for="coffret" class="cursor-pointer"
+                >Coffret Dresseur d'Élite</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="bundle" class="accent-blue-500" />
+              <label for="bundle" class="cursor-pointer">Booster Bundle</label>
+            </li>
+            <li>
+              <input type="checkbox" id="mini" class="accent-blue-500" />
+              <label for="mini" class="cursor-pointer">Mini tin</label>
+            </li>
+          </ul>
+
+          <hr class="my-5" />
+
+          <h4 class="mb-3 font-semibold">Expansion</h4>
+          <ul class="space-y-2">
+            <li>
+              <input type="checkbox" id="flamme" class="accent-blue-500" />
+              <label for="flamme" class="cursor-pointer">Flamme blanche</label>
+            </li>
+            <li>
+              <input type="checkbox" id="foudre" class="accent-blue-500" />
+              <label for="foudre" class="cursor-pointer">Foudre noire</label>
+            </li>
+            <li>
+              <input type="checkbox" id="evolutions" class="accent-blue-500" />
+              <label for="evolutions" class="cursor-pointer"
+                >Évolutions prismatiques</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="rivalites" class="accent-blue-500" />
+              <label for="rivalites" class="cursor-pointer"
+                >Rivalités Destinées</label
+              >
+            </li>
+          </ul>
+
+          <div class="flex justify-end mt-5">
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-200">
+              Filtrer
+            </button>
           </div>
         </section>
-        <section class="2xl:col-span-9" id="produitsealed">
-          <div class="flex justify-evenly">
-            <div class="flex justify-evenly items-start mb-15 gap-4">
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/etb2.jpg"
-                  alt="Mega Evolution Pokémon Center Coffret Dresseur d'Élite" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pokémon Center Coffret Dresseur d'Élite</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $77.99</p>
-                    <button>Acheter</button>
-                  </div>
+        <section class="col-span-12 lg:col-span-9 mb-10" id="produitsealed">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/etb2.jpg"
+                alt="Pokémon Center Coffret Dresseur d'Élite" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Pokémon Center Coffret Dresseur d'Élite
                 </div>
-              </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex justify-between items-center flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/bb2.jpg"
-                  alt="Rivalités Destinées Booster Bundle" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Rivalités Destinées Booster Bundle</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $28.99</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/tin3.jpg"
-                  alt="Pokémon GO Mini Tin" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pokémon GO Mini Tin</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $11.99</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/tin1.jpg"
-                  alt="Pokémon GO Mini Tin" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pokémon GO Mini Tin</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $11.99</p>
-                    <button>Acheter</button>
-                  </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $77.99</p>
+                  <button
+                    class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="flex justify-evenly">
-            <div class="flex justify-evenly items-start mb-15 gap-4">
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/bb1.jpg"
-                  alt="Mega Evolution Flammes Fantasmagoriques" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Flammes Fantasmagoriques Booster Bundle</p>
-                  </div>
-                  <hr class="mb-5" />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $35.99</p>
-                    <button>Acheter</button>
-                  </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/bb2.jpg"
+                alt="Rivalités Destinées Booster Bundle" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Rivalités Destinées Booster Bundle
                 </div>
-              </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex justify-between items-center flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/bbox2.jpg"
-                  alt="Flammes Fantasmagoriques Booster Box" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Mega Evolution Booster Box</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $210.99</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/etb1.jpg"
-                  alt="Pokémon Center Coffret Dresseur d'Élite" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pokémon Center Coffret Dresseur d'Élite</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $77.99</p>
-                    <button>Acheter</button>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/bbox1.jpg"
-                  alt="Flammes Fantasmagoriques Booster Box" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Flammes Fantasmagoriques Booster Box</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $210.99</p>
-                    <button>Acheter</button>
-                  </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $28.99</p>
+                  <button
+                    class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="flex justify-evenly">
-            <div class="flex justify-evenly items-start mb-15 gap-4">
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/tin2.jpg"
-                  alt="Pokémon GO Mini Tin" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pokémon GO Mini Tin</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $11.99</p>
-                    <button>Acheter</button>
-                  </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/tin3.jpg"
+                alt="Pokémon GO Mini Tin" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Pokémon GO Mini Tin</div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $11.99</p>
+                  <button
+                    class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/etb3.jpg"
-                  alt="Pokémon Center Coffret Dresseur d'Élite" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pokémon Center Coffret Dresseur d'Élite</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $77.99</p>
-                    <button>Acheter</button>
-                  </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/tin1.jpg"
+                alt="Pokémon GO Mini Tin" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Pokémon GO Mini Tin</div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $11.99</p>
+                  <button
+                    class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">
+                    Acheter
+                  </button>
                 </div>
               </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/etb4.jpg"
-                  alt="Pokémon Center Coffret Dresseur d'Élite" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pokémon Center Coffret Dresseur d'Élite</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $77.99</p>
-                    <button>Acheter</button>
-                  </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/bb1.jpg"
+                alt="Flammes Fantasmagoriques Booster Bundle" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Flammes Fantasmagoriques Booster Bundle
+                </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $35.99</p>
+                  <button class="bg-blue-500 text-white px-3 py-1 rounded">
+                    Acheter
+                  </button>
                 </div>
               </div>
-              <div
-                id="cards-sealed"
-                class="shadow-lg p-5 flex items-center justify-between flex-col">
-                <img
-                  class="w-3/4"
-                  src="images/etb5.jpg"
-                  alt="Pokémon Center Coffret Dresseur d'Élite" />
-                <div class="py-4">
-                  <div
-                    class="font-bold text-xl mb-2 flex justify-center text-center">
-                    <p>Pokémon Center Coffret Dresseur d'Élite</p>
-                  </div>
-                  <hr />
-                  <div class="flex justify-between items-center">
-                    <p>Prix: $77.99</p>
-                    <button>Acheter</button>
-                  </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/bbox2.jpg"
+                alt="Mega Evolution Booster Box" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Mega Evolution Booster Box
+                </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $210.99</p>
+                  <button class="bg-blue-500 text-white px-3 py-1 rounded">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/etb1.jpg"
+                alt="Pokémon Center Coffret Dresseur d'Élite" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Pokémon Center Coffret Dresseur d'Élite
+                </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $77.99</p>
+                  <button class="bg-blue-500 text-white px-3 py-1 rounded">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/bbox1.jpg"
+                alt="Flammes Fantasmagoriques Booster Box" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Flammes Fantasmagoriques Booster Box
+                </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $210.99</p>
+                  <button class="bg-blue-500 text-white px-3 py-1 rounded">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/tin2.jpg"
+                alt="Pokémon GO Mini Tin" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">Pokémon GO Mini Tin</div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $11.99</p>
+                  <button class="bg-blue-500 text-white px-3 py-1 rounded">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/etb3.jpg"
+                alt="Pokémon Center Coffret Dresseur d'Élite" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Pokémon Center Coffret Dresseur d'Élite
+                </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $77.99</p>
+                  <button class="bg-blue-500 text-white px-3 py-1 rounded">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/etb4.jpg"
+                alt="Pokémon Center Coffret Dresseur d'Élite" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Pokémon Center Coffret Dresseur d'Élite
+                </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $77.99</p>
+                  <button class="bg-blue-500 text-white px-3 py-1 rounded">
+                    Acheter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="shadow-lg p-5 flex flex-col items-center">
+              <img
+                class="w-full lg:w-3/4"
+                src="images/etb5.jpg"
+                alt="Pokémon Center Coffret Dresseur d'Élite" />
+              <div class="py-4 w-full text-center">
+                <div class="font-bold text-xl mb-2">
+                  Pokémon Center Coffret Dresseur d'Élite
+                </div>
+                <hr class="mb-2" />
+                <div class="flex justify-between items-center">
+                  <p>Prix: $77.99</p>
+                  <button class="bg-blue-500 text-white px-3 py-1 rounded">
+                    Acheter
+                  </button>
                 </div>
               </div>
             </div>
@@ -367,8 +380,7 @@
               >
             </div>
           </div>
-          <div
-            class="flex flex-col lg:flex-row items-center justify-between gap-2">
+          <div class="flex flex-row items-center justify-between gap-2">
             <a href="#"
               ><img src="images/facebook.png" alt="Lien Facebook"
             /></a>
@@ -378,7 +390,7 @@
             <a href="#"><img src="images/x.png" alt="Lien Twitter" /></a>
           </div>
         </div>
-        <hr class="border-neutral-100" />
+        <hr class="border-neutral-100 lg:mt-0 mt-5" />
         <div
           class="flex align-middle justify-between pt-5 text-neutral-100 pb-5">
           <p>Cegep de Trois-Rivieres</p>
